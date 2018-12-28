@@ -3,26 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>纯css写的玻尿酸鸭</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <style id="styleTag"></style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="head">
-      <div class="hat"></div>
-      <div class="eye left"></div>
-      <div class="eye right"></div>
-      <div class="cheek left"></div>
-      <div class="cheek right"></div>
-      <div class="lip up"></div>
-      <div class="lip down"></div>
+  <div class="code-wrapper">
+      <pre id="code"></pre>
+      <div class="actions">
+            <button data-speed="slow">慢速</button>
+            <button data-speed="normal" class="active">原速</button>
+            <button data-speed="fast">快速</button>
+        </div>
   </div>
-    <div class="main">
-      <div class="ling"></div>
-<div class="handPart">
-        <div class="hand left"></div>
-      <div class="hand right"></div>
-</div>
-    </div>
+  <div class="preview-wrapper">
+      <div class="preview">
+        <div class="wrapper">
+            <div class="headwrapper">
+                    <div class="hat"></div>
+                    <div class="head">                        
+                      <div class="eye left"></div>
+                      <div class="eye right"></div>
+                      <div class="cheek left"></div>
+                      <div class="cheek right"></div>
+                      <div class="lip up"></div>
+                      <div class="lip down"></div>
+                    </div>
+            </div>
+            <div class="mainwrapper">
+                    <div class="main">
+                            <div class="ling"></div>
+                            <div class="handPart">
+                                <div class="hand left"></div>
+                                <div class="hand right"></div>
+                            </div>
+                        </div>
+            </div>
+          </div>
+      </div>
   </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
